@@ -1,0 +1,24 @@
+:root {
+    --webstudio_and_a_hover_and_background_button: #2196f3;
+    --background_hero_and_footer: #2f303a;
+    --background_team_section: #f5f4fa;
+    --text_hero_and_footer: #FFFFFF;
+}
+
+span {
+    color: var(--webstudio_and_a_hover_and_background_button);
+}
+
+button {
+    background-color: var(--webstudio_and_a_hover_and_background_button);
+    color: var(--text_hero_and_footer);
+}
+
+.hero_and_footer  {
+    background-color: var(--background_hero_and_footer);
+    color: var(--text_hero_and_footer);
+}
+
+.team_section {
+    background-color: var(--background_team_section);
+}
