@@ -1,24 +1,24 @@
 :root {
-    --blue: #2196f3;
-    --black: #2f303a;
-    --background_white: #f5f4fa;
-    --text_white: #FFFFFF;
+    --main_color: #2196f3;
+    --dark_color: #2f303a;
+    --light_color: #f5f4fa;
+    --second_light_color: #FFFFFF;
 }
 
 span {
-    color: var(--blue);
+    color: var(--main_color);
 }
 
 button {
-    background-color: var(--blue);
-    color: var(--text_white);
+    background-color: var(--main_color);
+    color: var(--second_light_color);
 }
 
 .hero_and_footer  {
-    background-color: var(--black);
-    color: var(--text_white);
+    background-color: var(--dark_color);
+    color: var(--second_light_color);
 }
 
 .team_section {
-    background-color: var(--background_white);
+    background-color: var(--light_color);
 }
