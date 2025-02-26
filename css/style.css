@@ -10,6 +10,8 @@
     --third_light_color: rgba(255, 255, 255, 0.6);
 }
 
+/* ----- Section CSS ----- */
+
 .hero-section {
     color: var(--second_light_color);
     background-color: var(--dark_color);
@@ -23,19 +25,13 @@
     background-color: var(--dark_color);
 }
 
+/* ----- Header CSS ----- */
+
 .header-logo {
     color: var(--second_dark_color);
 }
 
 .header-logo:hover {
-    color: var(--main_color);
-}
-
-.footer-logo {
-    color: var(--second_light_color);
-}
-
-.footer-logo:hover {
     color: var(--main_color);
 }
 
@@ -59,9 +55,21 @@
     color: var(--main_color);
 }
 
+/* ----- Hero CSS ----- */
+
 .hero-button {
     background-color: var(--main_color);
     color: var(--second_light_color);
+}
+
+/* ----- Footer CSS ----- */
+
+.footer-logo {
+    color: var(--second_light_color);
+}
+
+.footer-logo:hover {
+    color: var(--main_color);
 }
 
 .footer-link-white {
