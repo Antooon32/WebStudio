@@ -1,45 +1,81 @@
 :root {
     --main_color: #2196f3;
+    /* -------------------- */
     --dark_color: #2f303a;
     --second_dark_color: #000000;
+    --third_dark_color: #757575;
+    /* -------------------- */
     --light_color: #f5f4fa;
     --second_light_color: #FFFFFF;
+    --third_light_color: rgba(255, 255, 255, 0.6);
 }
 
-a {
+.hero-section {
+    color: var(--second_light_color);
+    background-color: var(--dark_color);
+}
+
+.team-section {
+    background-color: var(--light_color);
+}
+
+.footer-section {
+    background-color: var(--dark_color);
+}
+
+.header-logo {
     color: var(--second_dark_color);
 }
 
-a:hover {
+.header-logo:hover {
     color: var(--main_color);
 }
 
-.webstudio {
-    font-size: 26px;
+.footer-logo {
+    color: var(--second_light_color);
 }
 
-.webstudio span {
+.footer-logo:hover {
     color: var(--main_color);
 }
 
-button {
+.logo-span {
+    color: var(--main_color);
+}
+
+.nav-link {
+    color: var(--second_dark_color);
+}
+
+.nav-link:hover {
+    color: var(--main_color);
+}
+
+.contacts-link {
+    color: var(--third_dark_color);
+}
+
+.contacts-link:hover {
+    color: var(--main_color);
+}
+
+.hero-button {
     background-color: var(--main_color);
     color: var(--second_light_color);
 }
 
-.hero_and_footer a {
-    color: currentColor;
-}
-
-.hero_and_footer a:hover { 
-    color: var(--main_color); 
-}
-
-.hero_and_footer  {
-    background-color: var(--dark_color);
+.footer-link-white {
     color: var(--second_light_color);
 }
 
-.team_section {
-    background-color: var(--light_color);
+.footer-link-white:hover {
+    color: var(--main_color);
+}
+
+.footer-link {
+    color: var(--third_light_color);
+}
+
+.footer-link:hover {
+    color: var(--main_color);
 }
