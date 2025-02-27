@@ -1,16 +1,19 @@
 :root {
     --main_color: #2196f3;
-    /* -------------------- */
+    /* -------------------------- */
     --dark_color: #2f303a;
     --second_dark_color: #000000;
     --third_dark_color: #757575;
-    /* -------------------- */
+    /* -------------------------- */
     --light_color: #f5f4fa;
     --second_light_color: #FFFFFF;
     --third_light_color: rgba(255, 255, 255, 0.6);
+    /* ----- Portfolio vars ----- */
+    --portfolio-dark-color: #212121;
+    --portfolio-light-color: #F5F4FA;
 }
 
-/* ----- Section CSS ----- */
+/* ----- Sections ----- */
 
 .hero-section {
     color: var(--second_light_color);
@@ -25,7 +28,7 @@
     background-color: var(--dark_color);
 }
 
-/* ----- Header CSS ----- */
+/* ----- Header ----- */
 
 .header-logo {
     color: var(--second_dark_color);
@@ -55,14 +58,14 @@
     color: var(--main_color);
 }
 
-/* ----- Hero CSS ----- */
+/* ----- Hero ----- */
 
 .hero-button {
     background-color: var(--main_color);
     color: var(--second_light_color);
 }
 
-/* ----- Footer CSS ----- */
+/* ----- Footer ----- */
 
 .footer-logo {
     color: var(--second_light_color);
@@ -86,4 +89,16 @@
 
 .footer-link:hover {
     color: var(--main_color);
+}
+
+/* ----- Portfolio ----- */
+
+.portfolio-button {
+    background-color: var(--portfolio-light-color);
+    color: var(--portfolio-dark-color);
+}
+
+.portfolio-button:hover {
+    background-color: var(--main_color);
+    color: var(--second_light_color);
 }
