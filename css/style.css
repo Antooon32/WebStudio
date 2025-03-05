@@ -1,4 +1,5 @@
 :root {
+    /* ----- Color vars ----- */
     --main_color: #2196f3;
     /* -------------------------- */
     --dark_color: #2f303a;
@@ -8,9 +9,17 @@
     --light_color: #f5f4fa;
     --second_light_color: #FFFFFF;
     --third_light_color: rgba(255, 255, 255, 0.6);
+    /* ----- Font vars ----- */
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
     /* ----- Portfolio vars ----- */
     --portfolio-dark-color: #212121;
     --portfolio-light-color: #F5F4FA;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 14px;
 }
 
 /* ----- Sections ----- */
@@ -28,10 +37,23 @@
     background-color: var(--dark_color);
 }
 
+/* ----- Всі заголовки секцій h2 ----- */
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
 /* ----- Header ----- */
 
 .header-logo {
     color: var(--second_dark_color);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
 
 .header-logo:hover {
@@ -44,6 +66,8 @@
 
 .nav-link {
     color: var(--second_dark_color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .nav-link:hover {
@@ -52,6 +76,8 @@
 
 .contacts-link {
     color: var(--third_dark_color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .contacts-link:hover {
@@ -60,15 +86,62 @@
 
 /* ----- Hero ----- */
 
+.hero-h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .hero-button {
     background-color: var(--main_color);
     color: var(--second_light_color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+/* ----- Our features section ------ */
+
+.our-features-h3 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.our-features-p {
+    font-weight: 400;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+}
+
+/* ----- Team section ----- */
+
+.team-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+.team-p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
 }
 
 /* ----- Footer ----- */
 
 .footer-logo {
     color: var(--second_light_color);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
 
 .footer-logo:hover {
@@ -77,6 +150,9 @@
 
 .footer-link-white {
     color: var(--second_light_color);
+    font-weight: 400;
+    line-height: 171%;
+    letter-spacing: 0.03em;
 }
 
 .footer-link-white:hover {
@@ -85,6 +161,9 @@
 
 .footer-link {
     color: var(--third_light_color);
+    font-weight: 400;
+    line-height: 171%;
+    letter-spacing: 0.03em;
 }
 
 .footer-link:hover {
