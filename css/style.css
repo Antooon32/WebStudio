@@ -175,9 +175,30 @@ body {
 .portfolio-button {
     background-color: var(--portfolio-light-color);
     color: var(--portfolio-dark-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .portfolio-button:hover {
     background-color: var(--main_color);
     color: var(--second_light_color);
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: 0.06em;
+    color: var(--portfolio-dark-color);
+}
+
+.project-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.03em;
+    color: var(--third_dark_color);
 }
