@@ -48,7 +48,7 @@ body {
 
 /* ----- Header ----- */
 
-.header-logo {
+.nav-logo {
     color: var(--second_dark_color);
     font-family: var(--second-family);
     font-weight: 700;
@@ -56,7 +56,7 @@ body {
     letter-spacing: 0.03em;
 }
 
-.header-logo:hover {
+.nav-logo:hover {
     color: var(--main_color);
 }
 
@@ -86,7 +86,7 @@ body {
 
 /* ----- Hero ----- */
 
-.hero-h1 {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -107,14 +107,14 @@ body {
 
 /* ----- Our features section ------ */
 
-.our-features-h3 {
+.our-features-title {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.our-features-p {
+.our-features-description {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -122,13 +122,13 @@ body {
 
 /* ----- Team section ----- */
 
-.team-h3 {
+.team-title {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
 }
 
-.team-p {
+.team-description {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -148,25 +148,25 @@ body {
     color: var(--main_color);
 }
 
-.footer-link-white {
+.address-link-white {
     color: var(--second_light_color);
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.footer-link-white:hover {
+.address-link-white:hover {
     color: var(--main_color);
 }
 
-.footer-link {
+.address-link {
     color: var(--third_light_color);
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.footer-link:hover {
+.address-link:hover {
     color: var(--main_color);
 }
 
