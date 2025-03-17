@@ -20,30 +20,40 @@
 body {
     font-family: var(--font-family);
     font-size: 14px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
 }
 
 /* ----- Sections ----- */
 
-.hero-section {
+.hero {
     color: var(--second_light_color);
     background-color: var(--dark_color);
 }
 
-.team-section {
+.team {
     background-color: var(--light_color);
 }
 
-.footer-section {
+.footer {
     background-color: var(--dark_color);
 }
 
 /* ----- Всі заголовки секцій h2 ----- */
 
 .section-title {
-    font-weight: 700;
     font-size: 36px;
-    letter-spacing: 0.03em;
     text-align: center;
+}
+
+/* ----- Прибираємо list-style-type та text-decoration ----- */
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ----- Header ----- */
@@ -51,9 +61,7 @@ body {
 .nav-logo {
     color: var(--second_dark_color);
     font-family: var(--second-family);
-    font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
 }
 
 .nav-logo:hover {
@@ -98,7 +106,6 @@ body {
 .hero-button {
     background-color: var(--main_color);
     color: var(--second_light_color);
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
@@ -109,15 +116,12 @@ body {
 
 .our-features-title {
     font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .our-features-description {
     font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 /* ----- Team section ----- */
@@ -125,13 +129,11 @@ body {
 .team-title {
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: 0.03em;
 }
 
 .team-description {
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.03em;
 }
 
 /* ----- Footer ----- */
@@ -139,20 +141,21 @@ body {
 .footer-logo {
     color: var(--second_light_color);
     font-family: var(--second-family);
-    font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
 }
 
 .footer-logo:hover {
     color: var(--main_color);
 }
 
+.address {
+    font-style: normal;
+}
+
 .address-link-white {
     color: var(--second_light_color);
     font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .address-link-white:hover {
@@ -163,7 +166,6 @@ body {
     color: var(--third_light_color);
     font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .address-link:hover {
@@ -178,7 +180,6 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -188,7 +189,6 @@ body {
 }
 
 .project-title {
-    font-weight: 700;
     font-size: 18px;
     line-height: 200%;
     letter-spacing: 0.06em;
@@ -199,6 +199,5 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 187%;
-    letter-spacing: 0.03em;
     color: var(--third_dark_color);
 }
