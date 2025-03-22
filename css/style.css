@@ -46,16 +46,6 @@ body {
     text-align: center;
 }
 
-/* ----- Прибираємо list-style-type та text-decoration ----- */
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 /* ----- Header ----- */
 
 .nav-logo {
