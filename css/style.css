@@ -40,10 +40,10 @@ body {
 }
 
 .hero {
-    color: var(--second_light_color);
-    background-color: var(--dark_color);
     padding-top: 200px;
     padding-bottom: 200px;
+    color: var(--second_light_color);
+    background-color: var(--dark_color);
 }
 
 .our-features {
