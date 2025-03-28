@@ -24,18 +24,47 @@ body {
     font-weight: 700;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* border: 5px solid tomato; */
+    outline: 1px dashed tomato;
+}
+
 /* ----- Sections ----- */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .hero {
     color: var(--second_light_color);
     background-color: var(--dark_color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.our-features {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+
+.what-we-do {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--light_color);
 }
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--dark_color);
 }
 
