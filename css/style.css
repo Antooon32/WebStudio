@@ -9,6 +9,8 @@
     --light_color: #f5f4fa;
     --second_light_color: #FFFFFF;
     --third_light_color: rgba(255, 255, 255, 0.6);
+    /* -------------------------- */
+    --shadow_color: rgba(0, 0, 0, 0.15);
     /* ----- Font vars ----- */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
@@ -30,6 +32,28 @@ body {
     padding: 0 15px;
     /* border: 5px solid tomato; */
     outline: 1px dashed tomato;
+}
+
+.nav-list,
+.header-contacts-list,
+.nav,
+.our-features-list,
+.what-we-do-list,
+.team-list,
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ----- Sections ----- */
@@ -71,13 +95,19 @@ body {
 /* ----- Всі заголовки секцій h2 ----- */
 
 .section-title {
+    margin-bottom: 50px;
     font-size: 36px;
     text-align: center;
 }
 
 /* ----- Header ----- */
 
+.nav {
+    margin-right: 344px;
+}
+
 .nav-logo {
+    margin-right: 93px;
     color: var(--second_dark_color);
     font-family: var(--second-family);
     font-size: 26px;
@@ -91,6 +121,14 @@ body {
     color: var(--main_color);
 }
 
+.nav-list {
+    outline: 1px solid red;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .nav-link {
     color: var(--second_dark_color);
     font-weight: 500;
@@ -99,6 +137,14 @@ body {
 
 .nav-link:hover {
     color: var(--main_color);
+}
+
+/* .header-contacts-list {
+    display: flex;
+} */
+
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .contacts-link {
@@ -114,6 +160,7 @@ body {
 /* ----- Hero ----- */
 
 .hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -123,6 +170,10 @@ body {
 }
 
 .hero-button {
+    height: 50px;
+    width: 216px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 var(--shadow_color);
     background-color: var(--main_color);
     color: var(--second_light_color);
     font-size: 16px;
@@ -133,7 +184,12 @@ body {
 
 /* ----- Our features section ------ */
 
+.our-features-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .our-features-title {
+    margin-bottom: 10px;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -141,23 +197,50 @@ body {
 .our-features-description {
     font-weight: 400;
     line-height: 1.71;
+    color: var(--third_dark_color);
+}
+
+/* ----- What we do section ----- */
+
+.what-we-do-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* ----- Team section ----- */
 
+.team-item {
+    border-radius: 0 0 4px 4px;
+    width: 270px;
+    height: 368px;
+    background-color: var(--second_light_color);
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-img {
+    margin-bottom: 30px;
+}
+
 .team-title {
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .team-description {
     font-weight: 400;
     font-size: 16px;
+    text-align: center;
+    color: var(--third_dark_color);
 }
 
 /* ----- Footer ----- */
 
 .footer-logo {
+    margin-bottom: 20px;
     color: var(--second_light_color);
     font-family: var(--second-family);
     font-size: 26px;
@@ -169,6 +252,10 @@ body {
 
 .address {
     font-style: normal;
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .address-link-white {
@@ -192,6 +279,11 @@ body {
 }
 
 /* ----- Portfolio ----- */
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .portfolio-button {
     background-color: var(--portfolio-light-color);
