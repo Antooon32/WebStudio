@@ -56,6 +56,11 @@ body {
     flex-direction: column;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* ----- Sections ----- */
 
 .header {
@@ -71,18 +76,10 @@ body {
 }
 
 .our-features {
-    padding-top: 94px;
     padding-bottom: 0;
 }
 
-.what-we-do {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--light_color);
 }
 
