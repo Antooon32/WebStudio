@@ -66,6 +66,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
 }
 
 .hero {
@@ -277,12 +278,33 @@ body {
 
 /* ----- Portfolio ----- */
 
-.portfolio {
-    padding-top: 94px;
+.portfolio-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-margin {
+    margin-bottom: 94px;
+}
+
+.portfolio-main {
     padding-bottom: 94px;
 }
 
+.portfolio-list-first {
+    margin-bottom: 50px;
+}
+
 .portfolio-button {
+    border-radius: 4px;
+    height: 38px;
+    padding: 0 22px;
+    border: 0;
     background-color: var(--portfolio-light-color);
     color: var(--portfolio-dark-color);
     font-weight: 500;
@@ -296,7 +318,27 @@ body {
     color: var(--second_light_color);
 }
 
+.portfolio-item-first {
+    margin-right: 8px;
+}
+
+.portfolio-list-second {
+    gap: 30px;
+}
+
+.portfolio-item-second {
+    width: 370px;
+    height: 404px;
+    border: 1px solid #eee;
+    /* outline: 1px dotted blue; */
+}
+
+.project-img {
+    margin-bottom: 20px;
+}
+
 .project-title {
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 200%;
     letter-spacing: 0.06em;
@@ -304,6 +346,7 @@ body {
 }
 
 .project-description {
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 187%;
