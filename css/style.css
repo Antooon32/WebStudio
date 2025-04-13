@@ -318,8 +318,8 @@ body {
     color: var(--second_light_color);
 }
 
-.portfolio-item-first {
-    margin-right: 8px;
+.portfolio-list-first {
+    column-gap: 8px;
 }
 
 .portfolio-list-second {
@@ -335,6 +335,10 @@ body {
 
 .project-img {
     margin-bottom: 20px;
+}
+
+.card-text-box {
+    padding-left: 24px;
 }
 
 .project-title {
