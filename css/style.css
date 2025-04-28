@@ -182,8 +182,52 @@ body {
 
 /* ----- Our features section ------ */
 
-.our-features-item:not(:last-child) {
+.our-features-list {
+    gap: 30px;
+}
+
+.our-features-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+    width: 270px;
+    height: 248px;
+}
+
+/* .our-features-item:not(:last-child) {
     margin-right: 30px;
+} */
+
+.our-features-item::before {
+    content: '';
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--light_color);
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    outline: 1px solid red;
+}
+
+.our-features-item:nth-child(1)::before {
+    background-image: url(../images/antenna.png);
+    background-position: center;
+}
+
+.our-features-item:nth-child(2)::before {
+    background-image: url(../images/clock.png);
+    background-position: center;
+}
+
+.our-features-item:nth-child(3)::before {
+    background-image: url(../images/diagram.png);
+    background-position: center;
+}
+
+.our-features-item:nth-child(4)::before {
+    background-image: url(../images/astronaut.png);
+    background-position: center;
 }
 
 .our-features-title {
@@ -193,9 +237,11 @@ body {
 }
 
 .our-features-description {
+    flex-grow: 1;
     font-weight: 400;
     line-height: 1.71;
     color: var(--third_dark_color);
+    outline: 1px dotted blue;
 }
 
 /* ----- What we do section ----- */
@@ -327,10 +373,17 @@ body {
 }
 
 .portfolio-item-second {
-    width: 370px;
-    height: 404px;
+    /* width: 370px; */
+    flex-basis: calc((100% - 60px) / 3);
+    /* height: 404px; */
     border: 1px solid #eee;
     /* outline: 1px dotted blue; */
+}
+
+.item-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-img {
@@ -338,7 +391,14 @@ body {
 }
 
 .card-text-box {
+    /* ! */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+    /* ! */
+    flex-grow: 1;
     padding-left: 24px;
+    outline: 1px dotted blue;
 }
 
 .project-title {
