@@ -5,12 +5,18 @@
     --dark_color: #2f303a;
     --second_dark_color: #000000;
     --third_dark_color: #757575;
+    --fourth_dark_color: rgba(47, 48, 58, 0.4);
     /* -------------------------- */
     --light_color: #f5f4fa;
     --second_light_color: #FFFFFF;
     --third_light_color: rgba(255, 255, 255, 0.6);
     /* -------------------------- */
     --shadow_color: rgba(0, 0, 0, 0.15);
+    --second_shadow_color: rgba(0, 0, 0, 0.2);
+    --third_shadow_color: rgba(0, 0, 0, 0.14);
+    --fourth_shadow_color: rgba(0, 0, 0, 0.12);
+    --fifth_shadow_color: rgba(0, 0, 0, 0.16);
+    --sixth_shadow_color: rgba(0, 0, 0, 0.06);
     /* ----- Font vars ----- */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
@@ -74,6 +80,14 @@ body {
     padding-bottom: 200px;
     color: var(--second_light_color);
     background-color: var(--dark_color);
+    background-image:
+    linear-gradient(
+        var(--fourth_dark_color),
+        var(--fourth_dark_color)
+    ),
+    url(../images/background_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .our-features {
@@ -201,7 +215,7 @@ body {
 
 .our-features-item::before {
     content: '';
-    width: 270px;
+    /* width: 270px; */
     height: 120px;
     border-radius: 4px;
     background-color: var(--light_color);
@@ -257,6 +271,10 @@ body {
     width: 270px;
     height: 368px;
     background-color: var(--second_light_color);
+    box-shadow: 
+    0 2px 1px 0 var(--second_shadow_color),
+    0 1px 1px 0 var(--third_shadow_color),
+    0 1px 3px 0 var(--fourth_shadow_color);
 }
 
 .team-item:not(:last-child) {
@@ -377,6 +395,10 @@ body {
     flex-basis: calc((100% - 60px) / 3);
     /* height: 404px; */
     border: 1px solid #eee;
+    box-shadow: 
+    1px 4px 6px 0 var(--fifth_shadow_color), 
+    0 4px 4px 0 var(--sixth_shadow_color), 
+    0 1px 1px 0 var(--fourth_shadow_color);
     /* outline: 1px dotted blue; */
 }
 
