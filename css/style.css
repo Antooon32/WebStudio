@@ -75,14 +75,12 @@ body {
     border-bottom: 1px solid #ececec;
 }
 
-.hero {
+.overlay {
     max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    color: var(--second_light_color);
-    background-color: var(--dark_color);
+    height: 600px;
+    margin: 0 auto;
     background-image:
     linear-gradient(
         var(--fourth_dark_color),
@@ -92,6 +90,16 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: var(--second_light_color);
+}
+
+
+.hero {
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+    /* color: var(--second_light_color); */
+    background-color: var(--dark_color);
+    /* width: 100%; */
 }
 
 .our-features {
