@@ -228,22 +228,22 @@ body {
 }
 
 .our-features-item:nth-child(1)::before {
-    background-image: url(../images/antenna.png);
+    background-image: url(../images/antenna.svg);
     background-position: center;
 }
 
 .our-features-item:nth-child(2)::before {
-    background-image: url(../images/clock.png);
+    background-image: url(../images/clock.svg);
     background-position: center;
 }
 
 .our-features-item:nth-child(3)::before {
-    background-image: url(../images/diagram.png);
+    background-image: url(../images/diagram.svg);
     background-position: center;
 }
 
 .our-features-item:nth-child(4)::before {
-    background-image: url(../images/astronaut.png);
+    background-image: url(../images/astronaut.svg);
     background-position: center;
 }
 
