@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="header portfolio-margin">
+    <header class="header">
         <div class="container flex">
             <nav class="nav">
                 <a class="nav-logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
@@ -32,14 +32,22 @@
                 </ul>
             </nav>
             <ul class="header-contacts-list">
-                <li class="contacts-item"><a class="contacts-link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contacts-item"><a class="contacts-link" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+                <li class="contacts-item">
+                    <svg class="contacts-svg" width="12px" height="16px">
+                        <use href="./images/symboldefs.svg#mail"></use>
+                    </svg>
+                    <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contacts-item">
+                    <svg class="contacts-svg" width="10px" height="16px">
+                        <use href="./images/symboldefs.svg#smartphone"></use>
+                    </svg>
+                    <a class="contacts-link" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
     </header>
-    <main class="portfolio-main">
+    <main class="portfolio-main section">
         <section class="portfolio">
             <div class="container">
                 <!-- <h1>Portfolio</h1> -->
@@ -159,19 +167,50 @@
     </main>
     <footer class="footer">
         <div class="container flex-footer">
-            <a class="footer-logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-            <address class="address">
-                <ul class="address-list">
-                    <li class="address-item"><a class="address-link-white" href="./index.html">м. Київ, пр-т Лесі
-                            Українки,
-                            26</a></li>
-                    <li class="address-item"><a class="address-link"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="address-item"><a class="address-link" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
+            <div class="footer-content">
+                <div class="footer-address">
+                    <a class="footer-logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address-list">
+                            <li class="address-item"><a class="address-link-white" href="./index.html">м. Київ, пр-т
+                                    Лесі
+                                    Українки,
+                                    26</a></li>
+                            <li class="address-item"><a class="address-link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="address-item"><a class="address-link" href="tel:+38-096-111-11-11">+38 096 111 11
+                                    11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join-us">
+                    <h3 class="our-features-title white margin-bottom">ПРИЄДНУЙТЕСЬ</h3>
+                    <ul class="join-us-list">
+                        <li class="join-us-item">
+                            <svg class="join-us-svg" width="20px" height="20px">
+                                <use href="./images/symboldefs.svg#instagram"></use>
+                            </svg>
+                        </li>
+                        <li class="join-us-item">
+                            <svg class="join-us-svg" width="20px" height="20px">
+                                <use href="./images/symboldefs.svg#twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="join-us-item">
+                            <svg class="join-us-svg" width="20px" height="20px">
+                                <use href="./images/symboldefs.svg#facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="join-us-item">
+                            <svg class="join-us-svg" width="20px" height="20px">
+                                <use href="./images/symboldefs.svg#linkedin"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
