@@ -166,32 +166,31 @@ body {
     /* margin-top: 6.5px; */
 }
 
-.contacts-item {
-    display: flex;
-    /* align-items: start; */
-    gap: 10px;
-}
-
-.contacts-svg {
+/* .contacts-svg {
     fill: var(--third_dark_color);
 }
 
 .contacts-item:hover .contacts-svg {
     fill: var(--main_color);
-}
+} */
 
 /* .contacts-item:not(:last-child) {
     margin-right: 50px;
 } */
 
 .contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--third_dark_color);
     font-weight: 500;
     letter-spacing: 0.02em;
+    fill: var(--third_dark_color);
 }
 
 .contacts-link:hover {
     color: var(--main_color);
+    fill: var(--main_color);
 }
 
 /* ----- Hero ----- */
@@ -337,27 +336,30 @@ body {
     margin-bottom: 30px;
 }
 
-.team-social-item {
+.team-social-link {
+    /* display: inline-block; */
     width: 44px;
     height: 44px;
-    border-radius: 100px;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: var(--fifth_dark_color);
     /* outline: 1px solid red; */
 }
 
-.team-social-svg {
+/* .team-social-svg {
     fill: var(--fifth_dark_color);
-}
+} */
 
-.team-social-item:hover {
+.team-social-link:hover {
     background-color: var(--main_color);
-}
-
-.team-social-item:hover .team-social-svg {
     fill: var(--second_light_color);
 }
+
+/* .team-social-item:hover .team-social-svg {
+    fill: var(--second_light_color);
+} */
 
 /* ----- Regular customers */
 
@@ -367,7 +369,7 @@ body {
     gap: 30px;
 }
 
-.regular-customers-item {
+.regular-customers-link {
     width: 170px;
     height: 92px;
     border: 1px solid var(--fifth_dark_color);
@@ -375,19 +377,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.regular-customers-svg {
     fill: var(--fifth_dark_color);
 }
 
-.regular-customers-item:hover {
-    border: 1px solid var(--main_color);
-}
+/* .regular-customers-svg {
+    fill: var(--fifth_dark_color);
+} */
 
-.regular-customers-item:hover .regular-customers-svg {
+.regular-customers-link:hover {
+    border: 1px solid var(--main_color);
     fill: var(--main_color);
 }
+
+/* .regular-customers-item:hover .regular-customers-svg {
+    fill: var(--main_color);
+} */
 
 /* ----- Footer ----- */
 
@@ -447,7 +451,7 @@ body {
     gap: 10px;
 }
 
-.join-us-item {
+.join-us-link {
     width: 44px;
     height: 44px;
     border-radius: 100%;
@@ -455,13 +459,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--seventh_shadow_color);
-}
-
-.join-us-svg {
     fill: var(--second_light_color);
 }
 
-.join-us-item:hover {
+/* .join-us-svg {
+    fill: var(--second_light_color);
+} */
+
+.join-us-link:hover {
     background-color: var(--main_color);
 }
 
