@@ -19,6 +19,7 @@
     --fifth_shadow_color: rgba(0, 0, 0, 0.16);
     --sixth_shadow_color: rgba(0, 0, 0, 0.06);
     --seventh_shadow_color: rgba(255, 255, 255, 0.1);
+    --eighth_shadow_color: rgba(47, 48, 58, 0.8);
     /* ----- Font vars ----- */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
@@ -289,8 +290,23 @@ body {
 
 /* ----- What we do section ----- */
 
+.what-we-do-item {
+    position: relative;
+}
+
 .what-we-do-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background-color: var(--eighth_shadow_color);
 }
 
 /* ----- Team section ----- */
@@ -567,4 +583,10 @@ body {
     font-size: 16px;
     line-height: 187%;
     color: var(--third_dark_color);
+}
+
+/* ----------------- */
+
+.no-margin {
+    margin: 0;
 }
