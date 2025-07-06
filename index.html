@@ -57,9 +57,9 @@
     <main class="main">
         <!-- секція херо -->
         <section class="hero">
-            <div class="container flex-column">
+            <div class="container flex-column-center">
                 <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                <button class="hero-button">Замовити послугу</button>
+                <button class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="our-features section">
@@ -309,7 +309,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container flex-footer">
+        <div class="container flex-column">
             <div class="footer-content">
                 <div class="footer-address">
                     <a class="footer-logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
@@ -361,9 +361,76 @@
                         </li>
                     </ul>
                 </div>
+                <div class="footer-form">
+                    <h3 class="our-features-title white margin-bottom">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+                    <form class="footer-form-content">
+                        <input name="footer-email" class="footer-input" type="email" placeholder="E-mail">
+                        <button class="footer-submit" type="submit">                           
+                            Підписатися
+                            <svg width="24px" height="24px">
+                                <use href="./images/symboldefs.svg#subscribe"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close" data-modal-close>
+                <svg width="11px" height="11px">
+                    <use href="./images/symboldefs.svg#modal-close"></use>
+                </svg>
+            </button>
+            <form class="modal-form flex-column" modal-form>
+                <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+                <div class="main-content-form flex-column">
+                    <label class="modal-label flex-column">
+                        Ім'я
+                        <div class="modal-input">
+                            <svg width="12px" height="12px">
+                                <use href="./images/symboldefs.svg#modal-name"></use>
+                            </svg>
+                            <input type="text" name="name" required>
+                        </div>
+                    </label>
+                    <label class="modal-label flex-column">
+                        Телефон
+                        <div class="modal-input">
+                            <svg width="14px" height="14px">
+                                <use href="./images/symboldefs.svg#modal-phone"></use>
+                            </svg>
+                            <input type="tel" name="tel" required>
+                        </div>
+                    </label>
+                    <label class="modal-label flex-column">
+                        Пошта
+                        <div class="modal-input">
+                            <svg width="16px" height="12px">
+                                <use href="./images/symboldefs.svg#modal-mail"></use>
+                            </svg>
+                            <input type="email" name="email" required>
+                        </div>
+                    </label>
+                    <label class="modal-label textarea-margin flex-column">
+                        Коментар
+                        <textarea class="modal-textarea-comment" name="comment" placeholder="Введіть текст" required></textarea>
+                    </label>
+                </div>
+                <label class="modal-label-comment flex-center">
+                    <input type="checkbox" name="checkbox" required>
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="modal-link"> Умови договору</a>
+                </label>
+                <button class="modal-submit" type="submit" modal-submit>Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <!--! Скрипт модалки -->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
