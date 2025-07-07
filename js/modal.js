@@ -36,10 +36,6 @@ const displayErrorMessage = (inputElement, message) => {
   errorMessage.classList.add("error-message");
   errorMessage.textContent = message;
 
-  //   errorMessage.style.color = "red";
-  //   errorMessage.style.fontSize = "12px";
-  //   errorMessage.style.marginTop = "5px";
-
   if (insertionPoint) {
     insertionPoint.after(errorMessage);
   }
@@ -51,12 +47,31 @@ const removeErrorMessage = (inputElement) => {
     checkElement = inputElement.closest(".modal-input");
   } else if (inputElement.type === "checkbox") {
     checkElement = inputElement.closest(".modal-label-comment");
+  } else if (inputElement.classList.contains("modal-textarea-comment")) {
+    checkElement = inputElement;
   }
 
   const nextElement = checkElement.nextElementSibling;
 
   if (nextElement && nextElement.classList.contains("error-message")) {
     nextElement.remove();
+  }
+};
+
+const updateValidationStyles = (inputElement, isValid) => {
+  let targetElement = null;
+  if (inputElement.closest(".modal-input")) {
+    targetElement = inputElement.closest(".modal-input");
+  } else if (inputElement.classList.contains("modal-textarea-comment")) {
+    targetElement = inputElement;
+  }
+
+  if (targetElement) {
+    if (isValid) {
+      targetElement.classList.add("is-valid");
+    } else {
+      targetElement.classList.remove("is-valid");
+    }
   }
 };
 
@@ -68,7 +83,7 @@ const checkFormValidity = () => {
 
     let isValid = true;
 
-    if (input.value.trim() === "") {
+    if (input.type !== "checkbox" && input.value.trim() === "") {
       isValid = false;
       displayErrorMessage(input, "Поле повинно бути заповнено.");
     }
@@ -82,16 +97,19 @@ const checkFormValidity = () => {
         isValid = false;
         displayErrorMessage(
           input,
-          "Номер телефону некорректний. Формат: +XX-XXX-XXX-XX-XX."
+          "Номер телефону некоректний. Формат: +XX-XXX-XXX-XX-XX."
         );
       }
     }
+
     if (input === emailInput && input.value.trim() !== "") {
       if (!emailRegex.test(input.value)) {
         isValid = false;
         displayErrorMessage(input, "Адреса некорректна.");
       }
     }
+
+    updateValidationStyles(input, isValid);
 
     if (!isValid) {
       allFilledAndValid = false;
@@ -110,10 +128,3 @@ requiredInputs.forEach((input) => {
     input.addEventListener("input", checkFormValidity);
   }
 });
-
-if (phoneInput) {
-  phoneInput.addEventListener("input", checkFormValidity);
-}
-if (emailInput) {
-  emailInput.addEventListener("input", checkFormValidity);
-}
