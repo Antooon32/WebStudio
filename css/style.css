@@ -88,12 +88,12 @@ body {
 /* ----- Sections ----- */
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    /*! position: fixed; */
+    /*! top: 0; */
+    /*! left: 0; */
+    /*! z-index: 1; */
     background-color: var(--second_light_color);
-    width: 100%;
+    /*! width: 100%; */
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ececec;
