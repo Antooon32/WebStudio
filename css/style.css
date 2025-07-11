@@ -12,6 +12,7 @@
     --light_color: #f5f4fa;
     --second_light_color: #FFFFFF;
     --third_light_color: rgba(255, 255, 255, 0.6);
+    --fourth_light_color: rgba(33, 150, 243, 0.9);
     /* -------------------------- */
     --shadow_color: rgba(0, 0, 0, 0.15);
     --second_shadow_color: rgba(0, 0, 0, 0.2);
@@ -87,6 +88,12 @@ body {
 /* ----- Sections ----- */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--second_light_color);
+    width: 100%;
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ececec;
@@ -156,6 +163,10 @@ body {
     outline: 1px solid red;
 } */
 
+.nav-item {
+    position: relative;
+}
+
 .nav-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -168,6 +179,22 @@ body {
 
 .nav-link:hover {
     color: var(--main_color);
+}
+
+.active-link {
+    color: var(--main_color);
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--main_color);
 }
 
 .header-contacts-list {
@@ -748,11 +775,22 @@ body {
     flex-basis: calc((100% - 60px) / 3);
     /* height: 404px; */
     border: 1px solid #eee;
+    /* box-shadow: 
+    1px 4px 6px 0 var(--fifth_shadow_color), 
+    0 4px 4px 0 var(--sixth_shadow_color), 
+    0 1px 1px 0 var(--fourth_shadow_color); */
+    /* outline: 1px dotted blue; */
+}
+
+.portfolio-item-second:hover {
     box-shadow: 
     1px 4px 6px 0 var(--fifth_shadow_color), 
     0 4px 4px 0 var(--sixth_shadow_color), 
     0 1px 1px 0 var(--fourth_shadow_color);
-    /* outline: 1px dotted blue; */
+}
+
+.portfolio-item-second:hover .img-overlay {
+    transform: translate(0);
 }
 
 .item-link {
@@ -761,8 +799,26 @@ body {
     flex-direction: column;
 }
 
-.project-img {
+.card-overlay-box {
+    position: relative;
+    overflow: hidden;
     margin-bottom: 20px;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+    color: var(--second_light_color);
+    background-color: var(--fourth_light_color);
 }
 
 .card-text-box {
